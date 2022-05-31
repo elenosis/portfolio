@@ -1,0 +1,28 @@
+@use "var";
+@use "reset";
+@use "myProjects";
+@use "bubble";
+@use "heading";
+@use "services";
+@use "about";
+
+body {
+  background-image: url(/images/paul-volkmer-qVotvbsuM_c-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  // min-height: 100vh;
+}
+
+p {
+  color: #fffc33;
+}
+
+footer {
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+  bottom: 0;
+  padding: 2rem;
+}

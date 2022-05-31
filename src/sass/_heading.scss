@@ -1,0 +1,77 @@
+@use "var";
+
+.top-container {
+  position: absolute;
+  top: 10vw;
+  left: 5vw;
+  animation: mymove 4s linear 1 reverse;
+}
+
+@keyframes mymove {
+  0% {
+    left: 10%;
+  }
+  100% {
+    left: 92%;
+  }
+}
+
+h2 {
+  color: var.$textColor;
+  font-size: 2vw;
+}
+span {
+  color: rgb(4, 0, 255);
+  animation: colors 0.1s 40;
+  font-size: 2vw;
+}
+
+@keyframes colors {
+  0% {
+    color: #ff5733;
+  }
+  10% {
+    color: #ffbd33;
+    font-size: 3vw;
+  }
+  20% {
+    color: #dbff33;
+    font-size: 1vw;
+  }
+  30% {
+    color: #75ff33;
+    font-size: 2vw;
+  }
+  40% {
+    color: #33ff57;
+    font-size: 3vw;
+  }
+  50% {
+    color: #33ffbd;
+    font-size: 1vw;
+  }
+  60% {
+    color: #ff3376;
+    font-size: 3vw;
+  }
+  70% {
+    color: #fffc33;
+    font-size: 2vw;
+  }
+  80% {
+    color: #9633ff;
+    font-size: 3vw;
+  }
+  90% {
+    color: #5533ff;
+    font-size: 2vw;
+  }
+  100% {
+    color: rgb(4, 0, 255);
+  }
+}
+
+h1 {
+  color: var.$textColor;
+  font-size: 2vw;
+}

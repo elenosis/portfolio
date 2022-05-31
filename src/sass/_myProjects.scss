@@ -1,0 +1,170 @@
+@use "var";
+
+#projects {
+  position: absolute;
+  width: 80vw;
+  aspect-ratio: 1/1;
+  left: 30vw;
+  top: 10vh;
+  background-color: #494e497c;
+  border-radius: 10%;
+  color: white;
+  text-align: center;
+  animation: opening 3s linear 1 forwards;
+}
+
+@keyframes opening {
+  0% {
+    top: 10vh;
+    left: 50vw;
+    opacity: 0;
+  }
+  10% {
+    width: 0;
+    opacity: 0.2;
+  }
+  100% {
+    width: 40vw;
+    aspect-ratio: 1/1;
+  }
+}
+
+#projects h2 {
+  position: absolute;
+  animation: heading 2s 1s 1 forwards ease-in;
+  opacity: 0;
+  color: var.$defaultColor;
+}
+
+@keyframes heading {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    top: 10%;
+    left: 20%;
+  }
+}
+
+#projects h3 {
+  position: absolute;
+  animation: heading3 4s 3s 2 linear;
+  opacity: 0;
+  font-size: 1.5rem;
+  color: var.$textColor;
+  text-align: left;
+  font-size: 5rem;
+  top: 70%;
+}
+@keyframes heading3 {
+  0% {
+    left: 20%;
+    color: #ff5733;
+    font-size: 1vw;
+  }
+  10% {
+    opacity: 1;
+    // top: 70%;
+    left: 20%;
+    color: #ffbd33;
+    font-size: 2vw;
+  }
+  20% {
+    color: #dbff33;
+    font-size: 1vw;
+  }
+  30% {
+    color: #75ff33;
+    font-size: 2vw;
+  }
+  40% {
+    color: #33ff57;
+    font-size: 1vw;
+  }
+  50% {
+    color: #33ffbd;
+    font-size: 2vw;
+  }
+  60% {
+    color: #ff3376;
+    font-size: 1vw;
+  }
+  70% {
+    color: #fffc33;
+    font-size: 2vw;
+  }
+  80% {
+    color: #9633ff;
+    font-size: 1vw;
+  }
+  90% {
+    color: #5533ff;
+    font-size: 2vw;
+  }
+  100% {
+    color: rgb(4, 0, 255);
+    opacity: 1;
+    top: 70%;
+    left: 20%;
+    font-size: 1vw;
+  }
+}
+
+#projects p {
+  position: absolute;
+  opacity: 0;
+  font-size: 1.5rem;
+  color: var.$defaultColor;
+  text-align: left;
+  top: 70%;
+  animation: load 1s 1 12s forwards linear;
+}
+
+@keyframes load {
+  0% {
+    top: 70%;
+    left: 20%;
+    opacity: 0;
+  }
+
+  100% {
+    width: 40vw;
+    left: 20%;
+    opacity: 1;
+  }
+}
+
+.close {
+  width: 5rem;
+  aspect-ratio: 1/1;
+  font-size: 3rem;
+  background-color: black;
+  color: var.$defaultColor;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+.close:hover {
+  width: 6rem;
+}
+
+.close a {
+  text-decoration: none;
+  color: var.$defaultColor;
+}
+
+footer {
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+  bottom: 0;
+  padding: 2rem;
+}
