@@ -1,24 +1,30 @@
 @use "var";
 
 .flex3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
-
+.titel {
+  color: var.$defaultColor;
+}
 .flex3 ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding-top: 25%;
-  // gap: 20%;
+  padding-top: 10%;
+  gap: 20%;
 }
 
 .link {
   text-decoration: none;
   color: var.$defaultColor;
-  font-size: 400%;
+  font-size: 300%;
 }
 
 .link:hover {
-  font-size: 600%;
+  font-size: 500%;
 }
