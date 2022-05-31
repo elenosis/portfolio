@@ -6,7 +6,7 @@
   aspect-ratio: 1/1;
   left: 30vw;
   top: 10vh;
-  background-color: #494e497c;
+  background-color: var.$textBgColor;
   border-radius: 10%;
   color: white;
   text-align: center;
@@ -118,7 +118,7 @@
 #projects p {
   position: absolute;
   opacity: 0;
-  font-size: 1.5rem;
+  font-size: x-large;
   color: var.$defaultColor;
   text-align: left;
   top: 70%;
@@ -137,28 +137,6 @@
     left: 20%;
     opacity: 1;
   }
-}
-
-.close {
-  width: 5rem;
-  aspect-ratio: 1/1;
-  font-size: 3rem;
-  background-color: black;
-  color: var.$defaultColor;
-  border-radius: 50%;
-  border: none;
-  position: absolute;
-  right: 5%;
-  top: 5%;
-}
-
-.close:hover {
-  width: 6rem;
-}
-
-.close a {
-  text-decoration: none;
-  color: var.$defaultColor;
 }
 
 footer {

@@ -1,0 +1,24 @@
+@use "var";
+
+.flex3 {
+  height: 100vh;
+}
+
+.flex3 ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 25%;
+  // gap: 20%;
+}
+
+.link {
+  text-decoration: none;
+  color: var.$defaultColor;
+  font-size: 400%;
+}
+
+.link:hover {
+  font-size: 600%;
+}

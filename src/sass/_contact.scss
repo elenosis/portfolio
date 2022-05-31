@@ -1,0 +1,67 @@
+@use "var";
+
+legend {
+  color: var.$defaultColor;
+  font-weight: bold;
+  font-size: 180%;
+  text-align: center;
+  padding: 5vw;
+}
+.field label {
+  display: block;
+  font-weight: bold;
+}
+form {
+  width: 70vw;
+  color: var.$defaultColor;
+  justify-content: center;
+}
+.field input,
+textarea {
+  width: 70vw;
+}
+
+p {
+  font-weight: bold;
+}
+fieldset {
+  margin-bottom: 100px;
+}
+.order {
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(99, 160, 7);
+}
+.flexContainer2 {
+  font-size: 200%;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+  padding-left: 30vw;
+}
+[type="text"],
+[type="email"],
+textarea {
+  font-size: 120%;
+}
+
+.submit {
+  font-size: 100%;
+  border-radius: 5px;
+  color: var.$defaultColor;
+  background-color: rgba(39, 38, 38, 0.308);
+  border: 1px solid var.$defaultColor;
+  padding: 1rem;
+}
+
+.submit:hover {
+  font-size: 120%;
+  border-radius: 5px;
+  color: black;
+  background-color: var.$defaultColor;
+  border: 1px solid black;
+  padding: 1rem;
+}

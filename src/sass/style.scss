@@ -5,6 +5,9 @@
 @use "heading";
 @use "services";
 @use "about";
+@use "nextPrevious";
+@use "contact";
+@use "connect";
 
 body {
   background-image: url(/images/paul-volkmer-qVotvbsuM_c-unsplash.jpg);
@@ -12,7 +15,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  // min-height: 100vh;
+  min-height: 100vh;
 }
 
 p {

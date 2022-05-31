@@ -1,0 +1,39 @@
+@use "var";
+
+.next {
+  width: 5rem;
+  aspect-ratio: 1/1;
+  font-size: 3rem;
+  background-color: rgba(39, 38, 38, 0.308);
+  color: var.$defaultColor;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+}
+
+.next:hover,
+.previous:hover {
+  width: 8rem;
+}
+
+.next a,
+.previous a {
+  text-decoration: none;
+  color: var.$defaultColor;
+}
+
+.previous {
+  width: 5rem;
+  aspect-ratio: 1/1;
+  font-size: 3rem;
+  background-color: rgba(39, 38, 38, 0.308);
+  color: var.$defaultColor;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: scale(-1, -1);
+}
