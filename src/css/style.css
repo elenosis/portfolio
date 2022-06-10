@@ -668,8 +668,8 @@ fieldset {
   padding-left: 30vw;
 }
 
-[type=text],
-[type=email],
+[type="text"],
+[type="email"],
 textarea {
   font-size: 120%;
 }
